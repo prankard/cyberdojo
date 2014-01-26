@@ -1,4 +1,3 @@
-
     <div class="filename_div"
          id="<%= filename %>_div">
       <table>
@@ -14,7 +13,8 @@
                         data-filename="<%= filename %>"
                         name="file_content[<%= filename %>]"
                         id="file_content_for_<%= filename %>"
-                        wrap="off">
+                        wrap="off"
+                        spellcheck="false">
 <%= h content %></textarea>                                     
             <% else %>            
               <%= render :partial => 'output' %>        
